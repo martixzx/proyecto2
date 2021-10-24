@@ -122,3 +122,12 @@ function escenarioLucha(){
     // innerHTML = jugador2.personaje.imagen
 
 }
+
+let vidajuga1 = document.getElementById("vidapj1")
+let vidajuga2 = document.getElementById("vidapj2")
+
+
+
+
+// let nodo.vida.jugador1= (parrafo=div>parrafo) // barra de vida del jugador1 
+// let nodo.vida.jugador2=(parrafo=div>parrafo) // barra de vida del jugador 2 
