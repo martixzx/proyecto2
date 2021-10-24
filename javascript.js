@@ -174,3 +174,11 @@ function atacar (personaje){
         break;
     }
 }
+
+function ganador (estepersonaje) {
+    pelea.style.display= "none"
+    fotofinal.style.display= "flex"
+    nodofinal.setAttribute("src",estepersonaje)
+}
+
+/// funciones tanto con flecha como sin flecha
