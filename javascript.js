@@ -131,3 +131,46 @@ let vidajuga2 = document.getElementById("vidapj2")
 
 // let nodo.vida.jugador1= (parrafo=div>parrafo) // barra de vida del jugador1 
 // let nodo.vida.jugador2=(parrafo=div>parrafo) // barra de vida del jugador 2 
+
+
+let restavida = (vidarestar) => (vidarestar) - 10
+
+let nodofinal = document.getElementById("ganador")
+let nodofinale = document.getElementById("fotofinal")
+
+function atacar (personaje){
+    
+    switch (personaje) {
+        case 'jugador1':
+            
+
+            
+            console.log(jugador1.personaje.life)
+            
+            jugador2.personaje.life = restavida(jugador2.personaje.life)
+            vidajuga2.innerHTML = jugador2.personaje.life
+            if (jugador2.personaje.life == 0) {
+                ganador(jugador1)
+                nodofinal.setAttribute("src",jugador1.personaje.imagen)
+            }
+            else {
+                console.log("sigue luchando")
+            }
+
+        break;
+        case 'jugador2':
+            
+            jugador1.personaje.life = restavida(jugador1.personaje.life)
+            vidajuga1.innerHTML = jugador1.personaje.life
+            
+            if (jugador1.personaje.life == 0) {
+                ganador(jugador2)
+                nodofinal.setAttribute("src",jugador2.personaje.imagen)
+            }
+            else {
+                console.log("sigue luchando")
+            }
+                
+        break;
+    }
+}
