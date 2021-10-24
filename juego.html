@@ -7,3 +7,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="juego.css">
 </head>
+<body>
+    
+    <div id="inicio">
+        <img src="imagenes/smash.gif" class="logosmash">
+        <br>
+        <br>
+        <button class="botonaco" id="botoncito" onclick="empezar()">Click para continuar</button>
+    </div>
+
+    <div id="seleccion" class="seleccion_jugadores">
+            <div class="jugador1"> 
+                Jugador 1 
+                <img src="https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0727_000_mf_n_00000000_f_n.png" alt="jugador1" class="incine">
+                <button onclick="seleccionarJugador('incineroar')" class="boton1">incineroar</button>
+            </div>
+            <div class="jugador2" > 
+                Jugador 2
+                <img src="https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0025_001_mo_n_00000000_f_n.png" alt="jugador2" class="pikach">
+                <button onclick="seleccionarJugador('pikachu')" class="boton2">Pikachu</button>
+
+            </div>
+            <div class="jugador3"> 
+                Jugador 3 
+                <img src="https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0150_000_uk_n_00000000_f_n.png" alt="jugador3" class="mewtw">
+                <button onclick="seleccionarJugador('mewtwo')" class="boton3">mewtwo</button>
+
+            </div>
+            <div class="jugador4"> 
+                Jugador 4
+                <img src="https://projectpokemon.org/images/sprites-models/homeimg/poke_capture_0658_000_mf_n_00000000_f_n.png" alt="jugador4" class="grenij">
+                <button onclick="seleccionarJugador('greninja')" class="boton4">greninja</button>
+
+            </div>
+    </div>
+    <div id="pelea" style="display: none;" class="escenariofinal">
+        
+            <div class="textoj1">   <h1 class="texto_barra1">Jugador 1</h1> 
+                <div id="vidapj1" class="restavida1">100</div>
+                <div>
+                    <img src="" alt="" id="juga1">
+                </div>
+                    <button onclick="atacar('jugador1')" class="primerboton">pelear</button>
+            </div>
+            <div class="textoj2"> <h1 class="texto_barra2">Jugador 2</h1>
+                <div id="vidapj2" class="restavida2">100</div>
+                <div>
+                    <img src="" alt="" id="juga2">
+                </div>
+                    <button onclick="atacar('jugador2')" class="segundoboton">pelear</button>
+            </div>
+        
+    </div>
+
+    <div id="fotofinal" style="display: none;" class="csfinal">
+        <h1 class="ganador">¡¡ GANADOR !!</h1>
+        <img src="" alt="" id="ganador">
+        <div class="nombreganador"><h2></h2></div>
+    </div>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
