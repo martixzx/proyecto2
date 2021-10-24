@@ -103,3 +103,22 @@ const seleccionarJugador = (player) => {
            
       } 
 }
+
+let nodoIma = document.getElementById("juga1")
+let nodoIma2 = document.getElementById("juga2")
+
+console.log(nodoIma,nodoIma2)
+
+function escenarioLucha(){
+    
+    seleccion.style.display= "none"
+    pelea.style.display= "flex"
+    
+    
+    nodoIma.setAttribute("src",jugador1.personaje.imagen)
+    nodoIma2.setAttribute("src",jugador2.personaje.imagen)
+    
+    // innerHTML = jugador1.personaje.imagen
+    // innerHTML = jugador2.personaje.imagen
+
+}
